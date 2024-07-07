@@ -1,8 +1,16 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "Portfolio-Website-master/index.html", "use": "@vercel/static" }
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "Portfolio-Website-master/$1" }
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
+
